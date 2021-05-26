@@ -30,7 +30,7 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "e962d1d4-8b07-4e76-89be-ecd1f1423b6d",
+      "applicationExtensionKey": "502459d5-e58e-46c3-bee5-02195a964d66",
        "save": {
            "url": "https://omn1twilio.herokuapp.com/save",
             "verb": "POST",
