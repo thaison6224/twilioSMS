@@ -31,7 +31,7 @@
     "configurationArguments": {
       "applicationExtensionKey": "502459d5-e58e-46c3-bee5-02195a964d66",
        "save": {
-           "url": "https://omn1twilio.herokuapp.com/save",
+           "url": "https://omn1twilio.herokuapp.com/journeybuilder/save",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -39,7 +39,7 @@
             "timeout": 2000
        },
        "publish": {
-           "url": "https://omn1twilio.herokuapp.com/publish",
+           "url": "https://omn1twilio.herokuapp.com/journeybuilder/publish",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -47,7 +47,7 @@
             "timeout": 2000
        },
        "validate": {
-           "url": "https://omn1twilio.herokuapp.com/validate",
+           "url": "https://omn1twilio.herokuapp.com/journeybuilder/validate",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -55,7 +55,7 @@
             "timeout": 2000
        },
        "stop": {
-           "url": "https://omn1twilio.herokuapp.com/stop",
+           "url": "https://omn1twilio.herokuapp.com/journeybuilder/stop",
             "verb": "POST",
             "body": "",
             "format": "json",
