@@ -103,18 +103,35 @@ exports.execute = function (req, res) {
     const from = requestBody.messagingService;
     const body = requestBody.body;;
 
-    const client = require('twilio')(accountSid, authToken); 
+    // const client = require('twilio')(accountSid, authToken); 
      
-    client.messages 
-          .create({ 
-             body: body,
-             messagingService: messagingService,
-             to: to
-           }) 
-          .then(message => console.log(message.sid)) 
-          .done();
+    // client.messages 
+    //       .create({ 
+    //          body: body,
+    //          messagingService: messagingService,
+    //          to: to
+    //        }) 
+    //       .then(message => console.log(message.sid)) 
+    //       .done();
 
+    var data = JSON.stringify({"Subject":"[SMS-MKT][execute], desc [11:00], noi dung Test"});
 
+    var config = {
+      method: 'post',
+      url: 'https://sanbqc-hfh.cs5.force.com/services/apexrest/APICreateTask',
+      headers: { 
+        'Content-Type': 'application/json', 
+      },
+      data : data
+    };
+
+    axios(config)
+    .then(function (response) {
+      console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
 
     // FOR TESTING
     logData(req);
